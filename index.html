@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Berra Söyler — Computer Engineer</title>
+<meta name="description" content="Berra Söyler — Sistem Güvenliği, Network Güvenliği ve Otomasyon odaklı bilgisayar mühendisi. CV, deneyim, projeler ve iletişim.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container nav-inner">
+    <a href="#home" class="brand"><span class="dot"></span> Berra Söyler</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="lang-tr">Anasayfa</a><a href="#home" class="lang-en">Home</a></li>
+      <li><a href="#about" class="lang-tr">Hakkımda</a><a href="#about" class="lang-en">About</a></li>
+      <li><a href="#experience" class="lang-tr">Deneyim</a><a href="#experience" class="lang-en">Experience</a></li>
+      <li><a href="#education" class="lang-tr">Eğitim</a><a href="#education" class="lang-en">Education</a></li>
+      <li><a href="#skills" class="lang-tr">Yetenekler</a><a href="#skills" class="lang-en">Skills</a></li>
+      <li><a href="#projects" class="lang-tr">Projeler</a><a href="#projects" class="lang-en">Projects</a></li>
+      <li><a href="#contact" class="lang-tr">İletişim</a><a href="#contact" class="lang-en">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <div class="lang-switch" id="langSwitch">
+        <button data-lang="tr" class="active">TR</button>
+        <button data-lang="en">EN</button>
+      </div>
+      <a href="assets/cv/Berra-Soyler-CV-TR.pdf" download class="btn btn-primary btn-sm" id="cvDownloadBtn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>
+        <span class="lang-tr">CV İndir</span><span class="lang-en">Download CV</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<!-- ===================== HERO ===================== -->
+<header class="hero" id="home">
+  <div class="container hero-grid">
+    <div class="hero-content reveal">
+      <div class="hero-kicker"><span class="pulse"></span>
+        <span class="lang-tr">Yeni fırsatlara ve projelere açığım</span>
+        <span class="lang-en">Open to new opportunities &amp; projects</span>
+      </div>
+      <h1>
+        <span class="lang-tr">Merhaba, ben <span class="accent-text">Berra Söyler</span></span>
+        <span class="lang-en">Hi, I'm <span class="accent-text">Berra Söyler</span></span>
+      </h1>
+      <p class="role">
+        <span class="lang-tr">Sistem Güvenliği &amp; Otomasyon odaklı <strong>Bilgisayar Mühendisi</strong></span>
+        <span class="lang-en"><strong>Computer Engineer</strong> focused on System Security &amp; Automation</span>
+      </p>
+      <p class="lede">
+        <span class="lang-tr">Linux tabanlı sistemlerde sıkılaştırma, güvenlik otomasyonu ve network güvenliği üzerine çalışan yeni mezun bir mühendisim. ALTAY (Siber Vatan) takımında edindiğim deneyimle sistem altyapısı ve güvenlik süreçlerinde güçlü bir teknik temel oluşturdum.</span>
+        <span class="lang-en">A newly graduated engineer specializing in system hardening, security automation and network security on Linux-based systems. Through the ALTAY (Siber Vatan) team I built a strong technical foundation in infrastructure and security operations.</span>
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6l-10 7L2 6"/><path d="M2 6h20v12H2z"/></svg>
+          <span class="lang-tr">İletişime Geç</span><span class="lang-en">Get in Touch</span>
+        </a>
+        <a href="#projects" class="btn btn-outline">
+          <span class="lang-tr">Projelerimi Gör</span><span class="lang-en">View Projects</span>
+        </a>
+      </div>
+      <div class="hero-meta">
+        <div class="hero-meta-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1116 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span class="lang-tr">İzmir, Çiğli</span><span class="lang-en">Izmir, Turkey</span>
+        </div>
+        <div class="hero-meta-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+          <a href="mailto:berrasoyler01@gmail.com">berrasoyler01@gmail.com</a>
+        </div>
+        <div class="hero-meta-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.8 19.8 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.12.9.33 1.79.63 2.65a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.43-1.2a2 2 0 012.11-.45c.86.3 1.75.51 2.65.63A2 2 0 0122 16.92z"/></svg>
+          <a href="tel:+905380379944">+90 538 037 99 44</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-card-wrap reveal">
+      <div class="hero-card">
+        <div class="avatar-ring"><div class="avatar-inner">BS</div></div>
+        <h3>Berra Söyler</h3>
+        <p class="tag"><span class="lang-tr">Bilgisayar Mühendisi</span><span class="lang-en">Computer Engineer</span></p>
+        <div class="hero-stats">
+          <div class="hero-stat"><strong>2</strong><span class="lang-tr">Staj</span><span class="lang-en">Internships</span></div>
+          <div class="hero-stat"><strong>8+</strong><span class="lang-tr">Eğitim</span><span class="lang-en">Trainings</span></div>
+          <div class="hero-stat"><strong>2026</strong><span class="lang-tr">Mezuniyet</span><span class="lang-en">Graduation</span></div>
+        </div>
+        <div class="social-row" style="margin-top:22px; justify-content:center;">
+          <a href="https://github.com/berriesyl" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 016 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.9 1.2 2 1.2 3.2 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.73 18.27.5 12 .5z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/berrasoyler/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM3.56 20.45h3.56V9H3.56v11.45z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-cue"><span class="lang-tr">Kaydır</span><span class="lang-en">Scroll</span><span class="line"></span></div>
+</header>
+
+<!-- ===================== ABOUT ===================== -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span class="lang-tr">Hakkımda</span><span class="lang-en">About Me</span></span>
+      <h2><span class="lang-tr">Kim olduğumu tanıyın</span><span class="lang-en">Get to know me</span></h2>
+      <p><span class="lang-tr">Sistem güvenliği ve otomasyon alanında tutkulu bir mühendis</span><span class="lang-en">An engineer passionate about system security and automation</span></p>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-card reveal">
+        <h4><span class="lang-tr">Odak Alanlarım</span><span class="lang-en">Focus Areas</span></h4>
+        <ul class="focus-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            <span class="lang-tr">Sistem Yönetimi &amp; Sıkılaştırma</span><span class="lang-en">System Administration &amp; Hardening</span>
+          </li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            <span class="lang-tr">Network Güvenliği</span><span class="lang-en">Network Security</span>
+          </li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            <span class="lang-tr">Güvenlik Otomasyonu</span><span class="lang-en">Security Automation</span>
+          </li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            <span class="lang-tr">Zafiyet Yönetimi &amp; Blue Team</span><span class="lang-en">Vulnerability Management &amp; Blue Team</span>
+          </li>
+        </ul>
+
+        <div class="lang-pills">
+          <span class="pill">
+            <span class="lang-tr">İngilizce</span><span class="lang-en">English</span>
+            <span class="bar"><i style="width:75%"></i></span>
+          </span>
+          <span class="pill">
+            <span class="lang-tr">Türkçe — Anadil</span><span class="lang-en">Turkish — Native</span>
+            <span class="bar"><i style="width:100%"></i></span>
+          </span>
+        </div>
+      </div>
+
+      <div class="about-text reveal">
+        <p>
+          <span class="lang-tr">Sistem Yönetimi ve Network Güvenliği alanında uzmanlaşmayı hedefleyen yeni mezun bir mühendisim. Genellikle Linux tabanlı sistemlerde ağırlıklı olmak üzere yapılandırma, sıkılaştırma ve güvenlik otomasyonu konularında deneyim sahibiyim.</span>
+          <span class="lang-en">I am a newly graduated engineer aiming to specialize in System Administration, Network Security, and Vulnerability Management. I have extensive experience in configuration, system hardening, and security automation, predominantly on Linux-based systems.</span>
+        </p>
+        <p>
+          <span class="lang-tr">ALTAY (Siber Vatan) takımıyla yürüttüğüm çalışmalar sayesinde hem sistem altyapısı hem de güvenlik süreçleri üzerine güçlü bir teknik temel kazandım. Hedefim; sistem sürekliliğini, veri bütünlüğünü ve güvenliği sağlayan çözümler üreten bir uzman olarak kariyerimi ilerletmek.</span>
+          <span class="lang-en">Through my work with the ALTAY (Siber Vatan) team, I have built a strong technical foundation in both system infrastructure and offensive/defensive security processes. My goal is to advance my career as a security expert who identifies vulnerabilities and produces solutions that ensure system continuity, data integrity, and robust security.</span>
+        </p>
+
+        <div class="training-grid" style="margin-top:28px;">
+          <div class="training-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l9 4.9-9 4.9-9-4.9L12 2z"/><path d="M3 12.1l9 4.9 9-4.9M3 17l9 4.9L21 17"/></svg>
+            <span class="lang-tr">İleri Seviye Python Programlama (BTK Akademi)</span><span class="lang-en">Advanced Python Programming (BTK Academy)</span>
+          </div>
+          <div class="training-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l9 4.9-9 4.9-9-4.9L12 2z"/><path d="M3 12.1l9 4.9 9-4.9M3 17l9 4.9L21 17"/></svg>
+            <span class="lang-tr">Beyaz Şapkalı Hacker ve Temel Linux Eğitimi (Siber Vatan)</span><span class="lang-en">Ethical Hacking and Basic Linux Training (Siber Vatan)</span>
+          </div>
+          <div class="training-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l9 4.9-9 4.9-9-4.9L12 2z"/><path d="M3 12.1l9 4.9 9-4.9M3 17l9 4.9L21 17"/></svg>
+            <span class="lang-tr">Pentest &amp; Zararlı Yazılım Analizi Eğitimi (Siber Vatan)</span><span class="lang-en">Penetration Testing &amp; Malware Analysis Training (Siber Vatan)</span>
+          </div>
+          <div class="training-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l9 4.9-9 4.9-9-4.9L12 2z"/><path d="M3 12.1l9 4.9 9-4.9M3 17l9 4.9L21 17"/></svg>
+            <span class="lang-tr">Web Güvenliği Eğitimi (Siber Vatan)</span><span class="lang-en">Web Security Training (Siber Vatan)</span>
+          </div>
+          <div class="training-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l9 4.9-9 4.9-9-4.9L12 2z"/><path d="M3 12.1l9 4.9 9-4.9M3 17l9 4.9L21 17"/></svg>
+            <span class="lang-tr">CCNA — Ağlara Giriş, Kurumsal Ağ Güvenliği &amp; Otomasyon, Switching/Routing (Netacad)</span><span class="lang-en">CCNA — Intro to Networks, Enterprise Security &amp; Automation, Switching/Routing (Netacad)</span>
+          </div>
+          <div class="training-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l9 4.9-9 4.9-9-4.9L12 2z"/><path d="M3 12.1l9 4.9 9-4.9M3 17l9 4.9L21 17"/></svg>
+            <span class="lang-tr">LetsDefend — SIEM Mühendisi, SOC Analisti &amp; Malware Analizi</span><span class="lang-en">LetsDefend — SIEM Engineer, SOC Analyst &amp; Malware Analysis</span>
+          </div>
+          <div class="training-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l9 4.9-9 4.9-9-4.9L12 2z"/><path d="M3 12.1l9 4.9 9-4.9M3 17l9 4.9L21 17"/></svg>
+            <span class="lang-tr">DevSecOps Süreçleri Eğitimi — CI/CD (Siber Kulüpler Birliği)</span><span class="lang-en">DevSecOps Processes Training — CI/CD (Siber Kulupler Birligi)</span>
+          </div>
+          <div class="training-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l9 4.9-9 4.9-9-4.9L12 2z"/><path d="M3 12.1l9 4.9 9-4.9M3 17l9 4.9L21 17"/></svg>
+            <span class="lang-tr">XDP eBPF | LKD 2026 Kış Kampı</span><span class="lang-en">XDP eBPF | LKD 2026 Winter Camp</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== EXPERIENCE ===================== -->
+<section class="section" id="experience">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span class="lang-tr">Deneyim</span><span class="lang-en">Experience</span></span>
+      <h2><span class="lang-tr">Profesyonel Yolculuğum</span><span class="lang-en">My Professional Journey</span></h2>
+      <p><span class="lang-tr">Stajlar, ekip çalışmaları ve saha deneyimi</span><span class="lang-en">Internships, team work and hands-on experience</span></p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-card">
+          <div class="timeline-top">
+            <h3>
+              <span class="lang-tr">Blue Team Stajyeri</span><span class="lang-en">Blue Team Intern</span>
+            </h3>
+            <span class="timeline-date lang-tr">Şub 2026 – Haz 2026</span>
+            <span class="timeline-date lang-en">Feb 2026 – Jun 2026</span>
+          </div>
+          <div class="timeline-org">Nordis Global Siber Güvenlik A.Ş.</div>
+          <ul>
+            <li><span class="lang-tr">Active Directory yönetimi ve sistem sıkılaştırma</span><span class="lang-en">Active Directory management and system hardening</span></li>
+            <li><span class="lang-tr">Log takibi, güvenliği ve analizi</span><span class="lang-en">Log tracking, security and analysis</span></li>
+            <li><span class="lang-tr">Ansible ve n8n ile güvenlik otomasyonu çözümleri</span><span class="lang-en">Security automation solutions utilizing Ansible and n8n</span></li>
+            <li><span class="lang-tr">Log güvenliği, analizi ve korelasyonu</span><span class="lang-en">Log security, analysis and correlation</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-card">
+          <div class="timeline-top">
+            <h3><span class="lang-tr">Siber Güvenlik Yazılım Mühendisi Stajyeri</span><span class="lang-en">Cybersecurity Software Engineer Intern</span></h3>
+            <span class="timeline-date lang-tr">Haz 2024 – Tem 2025</span>
+            <span class="timeline-date lang-en">Jun 2024 – Jul 2025</span>
+          </div>
+          <div class="timeline-org">VulnHero Bilişim A.Ş.</div>
+          <ul>
+            <li><span class="lang-tr">Python kullanarak siber güvenlik projelerinde otomasyon geliştirme</span><span class="lang-en">Developed automation for cybersecurity projects using Python</span></li>
+            <li><span class="lang-tr">Zafiyet araştırmaları ve veri toplama süreçlerine aktif katılım</span><span class="lang-en">Actively participated in vulnerability research and data collection processes</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-card">
+          <div class="timeline-top">
+            <h3>ALTAY <span class="lang-tr">Takımı</span><span class="lang-en">Team</span></h3>
+            <span class="timeline-date">2023 –</span>
+          </div>
+          <div class="timeline-org"><span class="lang-tr">Siber Vatan Programı</span><span class="lang-en">Siber Vatan Program</span></div>
+          <ul>
+            <li><span class="lang-tr">Wazuh kurulumu ve agent yönetimi ile MITRE ATT&amp;CK uyumlu log korelasyonu ve alarm analizi</span><span class="lang-en">Deployed and managed Wazuh agents, performing MITRE ATT&amp;CK aligned log correlation and alert analysis</span></li>
+            <li><span class="lang-tr">YARA entegrasyonu ve active response ile zararlı yazılım tespiti ve olay müdahale simülasyonları</span><span class="lang-en">Malware detection and incident response simulations through YARA integration and active response</span></li>
+            <li><span class="lang-tr">Linux sistemlerinde sıkılaştırma, servis konfigürasyonu ve yetki kısıtlamaları</span><span class="lang-en">System hardening, service configuration and privilege restriction on Linux systems</span></li>
+            <li><span class="lang-tr">Persistans ve backdoor tespiti için şüpheli süreç, servis ve ağ bağlantılarının analizi</span><span class="lang-en">Analysis and remediation of suspicious processes, services and connections for persistence/backdoor detection</span></li>
+            <li><span class="lang-tr">VLAN, firewall kuralları ve Wireshark ile trafik analizi — segmentasyon ve saldırı yüzeyi azaltma</span><span class="lang-en">Network security via VLANs, firewall rules and Wireshark traffic analysis — segmentation &amp; attack surface reduction</span></li>
+            <li><span class="lang-tr">VMware/Docker ortamlarında imaj hardening ve Vagrant ile lab kurulumu</span><span class="lang-en">Image hardening and lab setups using Vagrant within VMware and Docker environments</span></li>
+            <li><span class="lang-tr">Ansible ile sistem yönetimi otomasyonu</span><span class="lang-en">Automated system administration with Ansible</span></li>
+            <li><span class="lang-tr">Active Directory (LAB) ortamlarında olay analizi ile anomali tespiti (KAPE, Hayabusa vb.)</span><span class="lang-en">Anomaly detection via event analysis (KAPE, Hayabusa, etc.) in Active Directory LAB environments</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-card">
+          <div class="timeline-top">
+            <h3><span class="lang-tr">Sponsorluk Ekibi Üyesi</span><span class="lang-en">Sponsorship Team Member</span></h3>
+            <span class="timeline-date">2023 – 2026</span>
+          </div>
+          <div class="timeline-org"><span class="lang-tr">MCBÜ Bilişim Topluluğu</span><span class="lang-en">MCBU IT Community</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== EDUCATION ===================== -->
+<section class="section" id="education">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span class="lang-tr">Eğitim</span><span class="lang-en">Education</span></span>
+      <h2><span class="lang-tr">Akademik Geçmişim</span><span class="lang-en">Academic Background</span></h2>
+    </div>
+    <div class="edu-grid">
+      <div class="edu-card reveal">
+        <div class="edu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg></div>
+        <h3>Manisa Celal Bayar <span class="lang-tr">Üniversitesi</span><span class="lang-en">University</span></h3>
+        <div class="edu-sub">Computer Engineering (English) <span class="lang-tr">· GPA 3.48</span><span class="lang-en">· GPA 3.48</span></div>
+        <div class="edu-date">2022 – 2026</div>
+      </div>
+      <div class="edu-card reveal">
+        <div class="edu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg></div>
+        <h3 class="lang-tr">Çiğli Fen Lisesi</h3>
+        <h3 class="lang-en">Cigli Science High School</h3>
+        <div class="edu-sub"><span class="lang-tr">Lise</span><span class="lang-en">High School</span></div>
+      </div>
+      <div class="edu-card reveal">
+        <div class="edu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 010 20M12 2a15 15 0 000 20"/></svg></div>
+        <h3>Erasmus+</h3>
+        <div class="edu-sub"><span class="lang-tr">Almanya</span><span class="lang-en">Germany</span></div>
+        <div class="edu-date">2014 – 2015</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SKILLS ===================== -->
+<section class="section" id="skills">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span class="lang-tr">Yetenekler</span><span class="lang-en">Skills</span></span>
+      <h2><span class="lang-tr">Teknik Araç Kutum</span><span class="lang-en">My Technical Toolkit</span></h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <h4><span class="lang-tr">Sistemler &amp; Altyapı</span><span class="lang-en">Systems &amp; Infrastructure</span></h4>
+        <div class="tag-list">
+          <span class="tag">Linux</span><span class="tag">Active Directory</span><span class="tag">VMware</span><span class="tag">VirtualBox</span><span class="tag">Vagrant</span><span class="tag">Docker</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <h4><span class="lang-tr">Otomasyon &amp; Script</span><span class="lang-en">Automation &amp; Scripting</span></h4>
+        <div class="tag-list">
+          <span class="tag">Bash</span><span class="tag">Python</span><span class="tag">Ansible</span><span class="tag">Jenkins</span><span class="tag">n8n</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <h4><span class="lang-tr">Güvenlik &amp; Ağ</span><span class="lang-en">Security &amp; Networking</span></h4>
+        <div class="tag-list">
+          <span class="tag lang-tr">Sistem Sıkılaştırma</span><span class="tag lang-en">System Hardening</span>
+          <span class="tag lang-tr">Network Konfigürasyonu</span><span class="tag lang-en">Network Configuration</span>
+          <span class="tag">Wireshark</span><span class="tag">Wazuh</span><span class="tag">YARA</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <h4><span class="lang-tr">Veritabanları &amp; Diğer</span><span class="lang-en">Databases &amp; Other</span></h4>
+        <div class="tag-list">
+          <span class="tag">PostgreSQL</span>
+          <span class="tag lang-tr">Topluluk Önünde Konuşma</span><span class="tag lang-en">Public Speaking</span>
+          <span class="tag lang-tr">Fotoğrafçılık</span><span class="tag lang-en">Photography</span>
+          <span class="tag lang-tr">Tarih</span><span class="tag lang-en">History</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROJECTS ===================== -->
+<section class="section" id="projects">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span class="lang-tr">Projeler</span><span class="lang-en">Projects</span></span>
+      <h2><span class="lang-tr">Projeler &amp; Yarışmalar</span><span class="lang-en">Projects &amp; Competitions</span></h2>
+      <p><span class="lang-tr">Güvenlik, otomasyon ve yapay zeka odaklı çalışmalar</span><span class="lang-en">Work spanning security, automation and AI</span></p>
+    </div>
+
+    <div class="projects-grid">
+      <div class="project-card reveal">
+        <div class="proj-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg></div>
+        <h3 class="lang-tr">Hafifletilmiş SOAR Sistemi</h3>
+        <h3 class="lang-en">Lightweight SOAR System</h3>
+        <p><span class="lang-tr">Olay müdahale süreçlerini otomatikleştiren, hafif bir SOAR (Security Orchestration, Automation and Response) sistemi.</span><span class="lang-en">A lightweight Security Orchestration, Automation and Response (SOAR) system automating incident response workflows.</span></p>
+        <span class="proj-status lang-tr">Devam Ediyor</span><span class="proj-status lang-en">Ongoing</span>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="proj-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+        <h3>EMBRA</h3>
+        <p><span class="lang-tr">eBPF tabanlı siber güvenlik projesi — ALTAY takımı bünyesinde çekirdek seviyesinde tehdit tespiti üzerine çalışma.</span><span class="lang-en">An eBPF-based cybersecurity project — kernel-level threat detection work under the ALTAY team.</span></p>
+        <span class="proj-status lang-tr">Devam Ediyor · ALTAY</span><span class="proj-status lang-en">Ongoing · ALTAY</span>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="proj-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/><path d="M12 6v6l4 2"/></svg></div>
+        <h3>ABSim-LDH</h3>
+        <p><span class="lang-tr">Bel fıtığı tedavilerinin analizi için ajan tabanlı simülasyon ve makine öğrenmesi projesi.</span><span class="lang-en">Agent-based simulation and machine learning project for the analysis of herniated disc treatments.</span></p>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="proj-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-7-10a7 7 0 1114 0c0 5.5-7 10-7 10z"/><circle cx="12" cy="11" r="2.5"/></svg></div>
+        <h3 class="lang-tr">Teknofest — Meme Kanseri Erken Teşhis</h3>
+        <h3 class="lang-en">Teknofest — Breast Cancer Early Diagnosis</h3>
+        <p><span class="lang-tr">Yapay zeka tabanlı meme kanserinde erken teşhis projesi (UMMS).</span><span class="lang-en">AI-based early diagnosis of breast cancer project (UMMS).</span></p>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="proj-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><path d="M4 22V15"/></svg></div>
+        <h3 class="lang-tr">Yarışma Katılımları</h3>
+        <h3 class="lang-en">Competition Participations</h3>
+        <p><span class="lang-tr">Teknofest Hackmasters, STMCTF ve Mini Hacker of Clash yarışmalarına katılım.</span><span class="lang-en">Participation in Teknofest Hackmasters, STMCTF, and Mini Hacker of Clash competitions.</span></p>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="proj-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
+        <h3 class="lang-tr">Siber Güvenlik Kampları</h3>
+        <h3 class="lang-en">Cybersecurity Camps</h3>
+        <p><span class="lang-tr">Türk Telekom Siber Güvenlik Kampı 2025 ve Siber Vatan Kampı 2024 katılımcısı.</span><span class="lang-en">Participant of Turk Telekom Cybersecurity Camp 2025 and Siber Vatan Cybersecurity Camp 2024.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span class="lang-tr">İletişim</span><span class="lang-en">Contact</span></span>
+      <h2><span class="lang-tr">Hadi Konuşalım</span><span class="lang-en">Let's Talk</span></h2>
+      <p><span class="lang-tr">Staj, proje veya iş birliği teklifleri için bana ulaşabilirsiniz.</span><span class="lang-en">Reach out for internships, projects, or collaboration opportunities.</span></p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info-card reveal">
+        <h3><span class="lang-tr">İletişim Bilgileri</span><span class="lang-en">Contact Information</span></h3>
+        <p><span class="lang-tr">Aşağıdaki kanallardan doğrudan bana yazabilirsiniz.</span><span class="lang-en">Feel free to reach me directly through any of these channels.</span></p>
+        <ul class="contact-list">
+          <li>
+            <a href="mailto:berrasoyler01@gmail.com">
+              <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg></span>
+              berrasoyler01@gmail.com
+            </a>
+          </li>
+          <li>
+            <a href="tel:+905380379944">
+              <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.8 19.8 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.12.9.33 1.79.63 2.65a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.43-1.2a2 2 0 012.11-.45c.86.3 1.75.51 2.65.63A2 2 0 0122 16.92z"/></svg></span>
+              +90 538 037 99 44
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/berrasoyler/" target="_blank" rel="noopener">
+              <span class="icon-box"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM3.56 20.45h3.56V9H3.56v11.45z"/></svg></span>
+              linkedin.com/in/berrasoyler
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/berriesyl" target="_blank" rel="noopener">
+              <span class="icon-box"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 016 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.9 1.2 2 1.2 3.2 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.73 18.27.5 12 .5z"/></svg></span>
+              github.com/berriesyl
+            </a>
+          </li>
+          <li>
+            <span>
+              <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1116 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+              <span class="lang-tr">İzmir, Çiğli, Türkiye</span><span class="lang-en">Izmir, Cigli, Turkiye</span>
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <form class="contact-form reveal" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/success.html">
+        <input type="hidden" name="form-name" value="contact">
+        <p class="hidden">
+          <label>Don't fill this out: <input name="bot-field"></label>
+        </p>
+        <div class="form-row">
+          <div class="field">
+            <label for="name"><span class="lang-tr">Ad Soyad</span><span class="lang-en">Full Name</span></label>
+            <input type="text" id="name" name="name" required placeholder="Ad Soyad / Full name">
+          </div>
+          <div class="field">
+            <label for="email"><span class="lang-tr">E-posta</span><span class="lang-en">Email</span></label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com">
+          </div>
+        </div>
+        <div class="field">
+          <label for="subject"><span class="lang-tr">Konu</span><span class="lang-en">Subject</span></label>
+          <input type="text" id="subject" name="subject" placeholder="">
+        </div>
+        <div class="field">
+          <label for="message"><span class="lang-tr">Mesaj</span><span class="lang-en">Message</span></label>
+          <textarea id="message" name="message" required placeholder=""></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          <span class="lang-tr">Mesaj Gönder</span><span class="lang-en">Send Message</span>
+        </button>
+        <p class="form-note"><span class="lang-tr">Form Netlify üzerinden iletilir, mesajınız doğrudan e-postama ulaşır.</span><span class="lang-en">This form is handled by Netlify and delivered straight to my inbox.</span></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-inner">
+    <p>&copy; <span id="year">2026</span> Berra Söyler. <span class="lang-tr">Tüm hakları saklıdır.</span><span class="lang-en">All rights reserved.</span></p>
+    <div class="social-row">
+      <a href="https://github.com/berriesyl" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 016 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.9 1.2 2 1.2 3.2 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.73 18.27.5 12 .5z"/></svg></a>
+      <a href="https://www.linkedin.com/in/berrasoyler/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM3.56 20.45h3.56V9H3.56v11.45z"/></svg></a>
+      <a href="mailto:berrasoyler01@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
